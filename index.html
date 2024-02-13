@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="html, css, javascript">
+    <meta name="description" content="html 계층형 기본 프레임 제작">
+    <meta name="author" content="hyeonjiJO">
+
+    <meta property="og:url"                content="https://hyeonjijo.github.io/html/" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="웹사이트" />
+    <meta property="og:description"        content="htmls 마크업을 이용한 웹사이트입니다." />
+    <meta property="og:image"              content="./imgs/link1.png" />
+
+    <title>Start Bootstrap</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./imgs/link1.png" type="image/x-icon">
+
 </head>
 <body>
     <!-- index.html -->
     <!-- reset.css 정의 index.css에 import(호출)해서 사용 -->
-
+ 
     <header>
         <div>
             <h1>
@@ -30,10 +42,132 @@
             <!-- <img src="./imgs/header.jpg" alt="헤더">  씨에스에스 백그라운드 이미지로 넣기 -->
             <span>Welcome To Our Studio!</span>
             <p>It's Nice To Meet You</p>
-            <a href="#">Tell Me More</a>
+            <a href="#" class="btn">Tell Me More</a>
         </div>
+            
+        <section class="service">
+            <h2>SERVICES</h2>
+            <div>
+                <article>
+                    <!-- ::before의 영역 -->
+                    <h3>E-Commerce</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Minima maxime quam architecto quo inventore
+                    harum ex magni, dicta impedit.</p>
+                    <!-- after의 영역 -->
+                </article> 
+                <article>
+                    <h3>Responsive Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Minima maxime quam architecto quo inventore
+                    harum ex magni, dicta impedit.</p>
+                </article> 
+                <article>
+                    <h3>Web Security</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Minima maxime quam architecto quo inventore
+                    harum ex magni, dicta impedit.</p>
+                </article> 
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <h2>PORTFOLIO</h2>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <ul>
+                <li>
+                    <figure>
+                        <img src="./imgs/link1.png" alt="">
+                        <figcaption>
+                            <b>Threads</b>
+                            <p>Illustration</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./imgs/link2.png" alt="">
+                        <figcaption>
+                            <b>Threads</b>
+                            <p>Illustration</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./imgs/link3.png" alt="">
+                        <figcaption>
+                            <b>Threads</b>
+                            <p>Illustration</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./imgs/link4.png" alt="">
+                        <figcaption>
+                            <b>Threads</b>
+                            <p>Illustration</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./imgs/link5.png" alt="">
+                        <figcaption>
+                            <b>Threads</b>
+                            <p>Illustration</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./imgs/link6.png" alt="">
+                        <figcaption>
+                            <b>Threads</b>
+                            <p>Illustration</p>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>CONTACT US</h2>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+             <form>
+                <div class="info">
+                    <div>
+                        <input type="text" name="name" placeholder="Your Name*">
+                        <input type="email" name="email" placeholder="Your Email*">
+                        <input type="tel" name="phone" placeholder="Your Phone*">
+                    </div>
+                    <div>
+                        <textarea name="content"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn"> SEND MESSAGE </button>
+                </div>
+            </form>
+        </section>
     </main>
-    <footer></footer>
+
+    <footer>
+        <address>회사정보관련 내용</address>
+        <nav>
+            <a href="#">twitter</a>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+        </nav>
+        <nav>
+            <a href="#">services</a>
+            <a href="#">portfolio</a>
+            <a href="#">about</a>
+            <a href="#">team</a>
+            <a href="#">contact</a>
+        </nav>
+    </footer>
 
 </body>
 </html>
